@@ -1,0 +1,393 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'avenir-next';
+  src: url('./assets/font/AvenirLTStd-Book.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/Gotham-Black_0.otf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GOTHAM-BOLD_0.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/Gotham-BoldItalic.otf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/Gotham-Book.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GOTHAM-MEDIUM.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+html {
+  background-color: #99ba83;
+  color: #111;
+  font-family: "gotham";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.375;
+  -webkit-font-smoothing: antialiased;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header{
+		font-size: 0;
+		text-align: justify;
+		padding: 28px 48px;
+		position: relative;
+		z-index: 100;
+}
+
+.header:after{
+display: inline-block;
+width: 100%;
+content: '';
+
+}
+
+.header-logo,
+.header-menuicon {
+	font-size: 1rem;
+	display: inline-block;
+}
+.featured-wrapper{
+
+	position: relative;
+  overflow: hidden;
+}
+.featured-background{
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	background-color: #615a9b;
+	z-index: 10;
+	transform: skewY(-15deg);
+	transform-origin: 0;
+}
+.featured{
+z-index: 100;
+position: relative;
+}
+
+.featured-text{
+	font-size: 0;
+	padding: 12px 12px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.featured-text-startup{
+	font-weight: 700;
+	font-size: 36.4px;
+	text-align: center;
+	font-style: italic;
+	color: #ffa000;
+}
+.featured-text-business{
+	font-weight: 700;
+	font-size: 18.94px;
+	text-align: center;
+	color: #ffa000;
+	line-height: 18px;
+}
+.featured-text-where{
+	font-weight: 500;
+	font-size: 10.12px;
+	text-align: center;
+	color: white;
+	line-height: 18px;
+}
+.featured-text-ad{
+	font-weight: 500;
+	font-size: 22.29px;
+	text-align: center;
+	color: #ffa000;
+	line-height: 18px;
+}
+
+.button-startnow a	{
+	margin: 0 auto;
+
+	font-size: 16px;
+	text-align: justify;
+	width: 50%;
+	background-color: #ffa000;
+	font-weight: 700;
+	color: #615a9b;
+	padding: 8px;
+	text-decoration: none;
+
+
+}
+
+.button-startnow{
+	text-align: center;
+padding: 24px 0 36px 0;
+}
+
+.intro{
+	height: 3600px;
+	background-color: #99ba83;
+	position: relative;
+	z-index: 0;
+
+}
+
+.intro-heading{
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+	font-weight: 700;
+	font-size: 18px;
+	text-decoration: underline;
+	font-style: italic;
+	color: #19255a;
+}
+
+.intro-subject {
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+	font-weight: 600;
+	font-size: 16px;
+	color: #19255a;
+	padding: 12px 0;
+}
+
+.intro-text p{
+	font-weight: 500;
+	font-size: 15px;
+	width: 90%;
+	margin: 0 auto;
+	line-height: 24px;
+}
+
+.intro-image img {
+  max-width: 100%;
+  height: auto;
+	margin: 12px auto 0;
+	vertical-align: top;
+	padding: 0 28px;
+
+}
+
+
+
+.intro-service, .intro-aboutus {
+	width: 90%;
+	margin: 0 auto;
+	font-weight: 700;
+	font-size: 18px;
+	text-decoration: underline;
+	font-style: italic;
+	color: #19255a;
+	padding: 28px 0px;
+}
+
+.intro-service-text , .intro-about-text p{
+	font-weight: 500;
+	font-size: 15px;
+	width: 90%;
+	margin: 0 auto;
+	line-height: 24px;
+}
+
+.intro-allservice img {
+	max-width: 100%;
+	height: auto;
+	margin: 12px auto 0;
+	vertical-align: top;
+	padding: 0 28px;
+}
+
+.intro-allservice p {
+	font-weight: 500;
+	font-size: 15px;
+	width: 90%;
+	margin: 0 auto;
+	line-height: 24px;
+}
+
+.intro-allservice h3 {
+	font-weight: 500;
+	font-size: 18px;
+	text-decoration: underline;
+	color: #19255a;
+	padding: 18px 0;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.actiontext-start {
+	font-weight: 700;
+	font-size: 38px;
+	text-align: center;
+	color: #19255a;
+	padding-top: 28px;
+}
+
+.actiontext-ad {
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	color: #19255a;
+}
+
+.actiontext-button a {
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+	width: 50%;
+	background-color: #19255a;
+	font-weight: 700;
+	color: #a5c59a;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.actiontext-button {
+	text-align: center;
+	padding: 24px 0 24px 0;
+}
+
+.footer-background {
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	background-color: #615a9b;
+	z-index: 10;
+	transform: skewY(-15deg);
+	transform-origin: 0;
+}
+
+.footer-text {
+	height: 600px;
+	background-color: #615a9b;
+	position: relative;
+	z-index: 20;
+}
+
+.contact-us {
+	width: 90%;
+	margin: 0 auto;
+	font-weight: 700;
+	font-size: 18px;
+	text-decoration: underline;
+	font-style: italic;
+	color: #ffa000;
+	padding: 18px 0px;
+	text-align: center;
+}
+
+.contact-image img {
+	max-width: 100%;
+	height: auto;
+	margin: 12px auto 0;
+	padding: 0 28px;
+}
+
+.contact-us-text p {
+	font-weight: 400;
+	font-size: 16px;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 28px;
+	color: white;
+}
+
+.contact-image {
+	font-size: 0;
+	text-align: left;
+	width: 35%;
+	padding: 18px 18px;
+}
+
+.contact-image::after {
+	display: inline-block;
+	content: '';
+	width: 100%;
+}
+
+.contact-facebook, .contact-instagram, .contact-linkedin {
+	display: inline-block;
+	font-size: 1rem;
+	text-align: left;
+}
